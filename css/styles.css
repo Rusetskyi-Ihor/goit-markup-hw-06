@@ -750,10 +750,6 @@ body {
   gap: 24px;
 }
 
-.footer-label {
-  content: '';
-}
-
 .footer-input {
   width: 264px;
   height: 40px;
