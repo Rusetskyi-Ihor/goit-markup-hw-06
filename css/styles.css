@@ -466,6 +466,7 @@ body {
 
 .policy-link {
   color: var(--links-hover-active);
+  text-decoration: underline;
 }
 
 .modal-form-btn {
