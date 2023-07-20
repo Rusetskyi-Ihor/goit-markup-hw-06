@@ -429,7 +429,7 @@ body {
   border-color: var(--links-hover-active);
 }
 
-.form-checkbox-comtainer {
+.form-checkbox-container {
   margin-bottom: 24px;
 }
 
@@ -524,7 +524,7 @@ body {
   padding-bottom: 120px;
 }
 
-.service-titile {
+.service-title {
   margin-bottom: 72px;
   text-align: center;
 }
