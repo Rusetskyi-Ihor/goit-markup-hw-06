@@ -117,12 +117,11 @@ textarea {
 }
 
 .container {
-  width: 100%;
   min-width: 320px;
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
 }
 
 body {
