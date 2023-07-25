@@ -1,13 +1,39 @@
-@media screen and (max-width: 767px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+/** MOBILE */
+
+@media screen and (max-width: 427px) {
+  .modal {
+    width: 90%;
+    height: 90%;
+    height: 564px;
+  }
+  .mobile-link.tel {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .hero {
+    max-width: 428px;
     background-image: linear-gradient(
         180deg,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile-bcg-hero.jpg);
+      url(../images/hero-bcg/mobile-hero-bcg@1x.jpg);
   }
 }
+@media screen and (max-width: 767px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+  .hero {
+    max-width: 428px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/mobile-hero-bcg@2x.jpg);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header-container {
     height: 70px;
@@ -16,11 +42,6 @@
   .header-menu-list,
   .header-address {
     display: none;
-  }
-
-  .modal {
-    width: 392px;
-    padding: 72px 16px 24px 16px;
   }
 
   .advantages-block {
@@ -60,6 +81,8 @@
   }
 }
 
+/**------ Tablet -------*/
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -73,8 +96,28 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 1157px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/tablet-hero-bcg@2x.jpg);
+  }
+}
 @media screen and (max-width: 1157px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/tablet-hero-bcg@1x.jpg);
+  }
+
   .section-service {
     display: none;
   }
@@ -87,9 +130,35 @@
   }
 }
 
+/**------ DESKTOP -------*/
+
 @media screen and (min-width: 1158px) {
   .container {
+    width: 100%;
     max-width: 1158px;
     padding: 0 15px;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/desktop-hero-bcg@1x.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/desktop-hero-bcg@2x.jpg);
   }
 }
