@@ -1,0 +1,95 @@
+@media screen and (max-width: 767px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-bcg-hero.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    height: 70px;
+  }
+
+  .header-menu-list,
+  .header-address {
+    display: none;
+  }
+
+  .modal {
+    width: 392px;
+    padding: 72px 16px 24px 16px;
+  }
+
+  .advantages-block {
+    display: none;
+  }
+
+  .advantagers-subtitle {
+    text-align: center;
+  }
+
+  .footer-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-main-container {
+    row-gap: 72px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .soc-text {
+    text-align: center;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .product-btn-list {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+    max-width: 265px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .header-menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .section-service {
+    display: none;
+  }
+
+  .footer-input {
+    opacity: 0.30000001192092896;
+  }
+  .footer-input::placeholder {
+    opacity: 0.6000000238418579;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
