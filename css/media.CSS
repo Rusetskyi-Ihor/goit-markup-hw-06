@@ -1,15 +1,28 @@
-/** MOBILE */
+/** --------------------------MOBILE ------------------------------------*/
+
+/*? ----STYLE FOR ONLY SMALL SCREEN ---- */
 
 @media screen and (max-width: 427px) {
-  .modal {
-    width: 90%;
-    height: 90%;
-    height: 564px;
-  }
   .mobile-link.tel {
     font-size: 24px;
   }
+
+  .modal {
+    width: 90%;
+  }
 }
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .modal {
+    width: 392px;
+  }
+}
+
+/*?--------BCG FOR MOBILE HERO SECTION @1 @2----------- */
 
 @media screen and (max-width: 767px) {
   .hero {
@@ -33,30 +46,41 @@
       url(../images/hero-bcg/mobile-hero-bcg@2x.jpg);
   }
 }
+/*? -----STYLE FOR MOBILE ONLY----- */
 
 @media screen and (max-width: 767px) {
+  /*! header */
   .header-container {
     height: 70px;
   }
-
   .header-menu-list,
   .header-address {
     display: none;
   }
 
+  /*! hero  */
+  .backdrop {
+    overflow-y: scroll;
+  }
+
+  /*! advantages */
   .advantages-block {
     display: none;
   }
-
   .advantagers-subtitle {
     text-align: center;
   }
 
+  /*! footer */
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
   .footer-main-container {
     flex-direction: column;
     align-items: center;
   }
-
   .footer-main-container {
     row-gap: 72px;
     flex-direction: column;
@@ -67,12 +91,6 @@
     text-align: center;
   }
 
-  .footer-form {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
   .product-btn-list {
     flex-wrap: wrap;
     column-gap: 21px;
@@ -81,22 +99,76 @@
   }
 }
 
-/**------ Tablet -------*/
+/**--------------------------- Tablet ---------------------------------------------*/
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
   }
 
+  /*! header */
   .menu-container {
     display: none;
   }
-
   .header-menu-toggle {
     display: none;
   }
+  .header-logo {
+    margin-right: 120px;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  /*! hero */
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bcg/tablet-hero-bcg@1x.jpg);
+  }
+  .hero-title {
+    min-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 36px auto;
+  }
+  .modal {
+    width: 408px;
+  }
 }
-@media screen and (max-width: 1157px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+
+/*?-------- STYLE ONLY TABLET --------*/
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-main-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+  .footer-container a {
+    display: flex;
+    align-self: flex-start;
+  }
+  .footer-form {
+    gap: 24px;
+  }
+  .footer-container {
+    width: 264px;
+  }
+  .subscribe {
+    margin-right: 43px;
+  }
+}
+
+/*?-------BCG TABLET HERO SECTION @2------------*/
+
+@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
@@ -107,22 +179,21 @@
       url(../images/hero-bcg/tablet-hero-bcg@2x.jpg);
   }
 }
+
+/*?--------style only FOR TAB AND MOB only---------*/
+
 @media screen and (max-width: 1157px) {
-  .hero {
-    max-width: 768px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bcg/tablet-hero-bcg@1x.jpg);
+  .header-address-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
   }
 
   .section-service {
     display: none;
   }
-
   .footer-input {
+    width: 264px;
     opacity: 0.30000001192092896;
   }
   .footer-input::placeholder {
@@ -130,7 +201,7 @@
   }
 }
 
-/**------ DESKTOP -------*/
+/**------------------------ DESKTOP ------------------------------------------*/
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -149,7 +220,16 @@
       ),
       url(../images/hero-bcg/desktop-hero-bcg@1x.jpg);
   }
+
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
 }
+
+/*?--------DESKTOP HERO BCG-------------*/
+
 @media screen and (min-width: 1158px) and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
   .hero {
     width: 100%;
