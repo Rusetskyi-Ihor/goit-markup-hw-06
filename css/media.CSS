@@ -91,8 +91,11 @@
   }
 
   /*! customers */
-  .customers-item {
-    flex-basis: calc((100% - 16px) / 2);
+  .customers-icon {
+    width: 110px;
+  }
+  .customers-list {
+    gap: 72px 16px;
   }
 }
 
@@ -205,6 +208,9 @@
   }
 
   /*! customers  */
+  .customers-list {
+    gap: 72px 24px;
+  }
   .customers-link {
     width: 168px;
   }
@@ -244,10 +250,6 @@
   }
 
   /*! customers  */
-  .customers-list {
-    gap: 72px 24px;
-    justify-content: center;
-  }
 }
 
 /*?-------BCG HERO  ---  MIN: 768px @2---------*/
@@ -310,7 +312,6 @@
   /*! customers */
   .customers-list {
     flex-wrap: wrap;
-    gap: 72px 16px;
   }
 }
 
@@ -415,7 +416,7 @@
     padding: 120px 0;
   }
   .customers-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
   .customers-item {
     height: 88px;
