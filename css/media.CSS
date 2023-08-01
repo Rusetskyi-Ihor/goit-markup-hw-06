@@ -4,6 +4,9 @@
   .container {
     max-width: 428px;
   }
+  .footer-input {
+    width: 398px;
+  }
 }
 
 /*? ----MAX: 427px ---- */
@@ -15,6 +18,10 @@
 
   .modal {
     width: 90%;
+  }
+
+  .footer-input {
+    min-width: 290px;
   }
 }
 
@@ -230,6 +237,11 @@
     width: 168px;
   }
 
+  /*! footer */
+  .footer-input {
+    width: 264px;
+  }
+
   /*! PORTFOLIO */
   .section-product {
     padding: 64px 0 96px 0;
@@ -308,7 +320,6 @@
 
   /*! footer */
   .footer-input {
-    width: 264px;
     opacity: 0.30000001192092896;
   }
   .footer-input::placeholder {
@@ -472,9 +483,6 @@
   }
   .social-media {
     margin-right: 80px;
-  }
-  .footer-input {
-    width: 264px;
   }
   .footer-form {
     gap: 24px;
