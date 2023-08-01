@@ -18,9 +18,13 @@
   }
 }
 
-/*?--------BCG HERO MAX: 767px @1 @2----------- */
+/*? -----MAX: 767px----- */
 
 @media screen and (max-width: 767px) {
+  /*! hero  */
+  .backdrop {
+    overflow-y: scroll;
+  }
   .hero {
     max-width: 428px;
     background-image: linear-gradient(
@@ -30,21 +34,18 @@
       ),
       url(../images/hero-bcg/mobile-hero-bcg@1x.jpg);
   }
-}
-@media screen and (max-width: 767px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
-  .hero {
-    max-width: 428px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bcg/mobile-hero-bcg@2x.jpg);
+  @media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+    .hero {
+      max-width: 428px;
+      background-image: linear-gradient(
+          180deg,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bcg/mobile-hero-bcg@2x.jpg);
+    }
   }
-}
-/*? -----MAX: 767px----- */
 
-@media screen and (max-width: 767px) {
   /*! header */
   .header-container {
     height: 70px;
@@ -52,11 +53,6 @@
   .header-menu-list,
   .header-address {
     display: none;
-  }
-
-  /*! hero  */
-  .backdrop {
-    overflow-y: scroll;
   }
 
   /*! advantages */
@@ -96,6 +92,14 @@
   }
   .customers-list {
     gap: 72px 16px;
+  }
+
+  /*! PORTFOLIO */
+  .product-list {
+    justify-content: center;
+  }
+  .product-image {
+    height: 280px;
   }
 }
 
@@ -184,6 +188,17 @@
       ),
       url(../images/hero-bcg/tablet-hero-bcg@1x.jpg);
   }
+  @media screen and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+    .hero {
+      max-width: 768px;
+      background-image: linear-gradient(
+          180deg,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bcg/tablet-hero-bcg@2x.jpg);
+    }
+  }
   .hero-title {
     min-width: 496px;
     font-size: 56px;
@@ -213,6 +228,28 @@
   }
   .customers-link {
     width: 168px;
+  }
+
+  /*! PORTFOLIO */
+  .section-product {
+    padding: 64px 0 96px 0;
+  }
+  .product-btn {
+    padding: 12px 24px;
+  }
+  .product-btn-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .product-list {
+    gap: 72px 24px;
+  }
+  .product-images {
+    width: 356px;
+  }
+  .product-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -248,21 +285,9 @@
     flex-direction: row;
     gap: 64px 24px;
   }
-
-  /*! customers  */
-}
-
-/*?-------BCG HERO  ---  MIN: 768px @2---------*/
-
-@media screen and (min-width: 768px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
-  .hero {
-    max-width: 768px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bcg/tablet-hero-bcg@2x.jpg);
+  /*! portfolio */
+  .product-image {
+    height: 300px;
   }
 }
 
@@ -351,6 +376,18 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bcg/desktop-hero-bcg@1x.jpg);
+  }
+  @media screen and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+    .hero {
+      width: 100%;
+      max-width: 1440px;
+      background-image: linear-gradient(
+          180deg,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bcg/desktop-hero-bcg@2x.jpg);
+    }
   }
   .hero-title {
     margin: 0 auto 48px auto;
@@ -442,18 +479,22 @@
   .footer-form {
     gap: 24px;
   }
-}
-/*?--------DESKTOP HERO BCG-------------*/
 
-@media screen and (min-width: 1158px) and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
-  .hero {
-    width: 100%;
-    max-width: 1440px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-bcg/desktop-hero-bcg@2x.jpg);
+  /*! PORTFOLIO */
+  .section-product {
+    padding: 100px 0 120px 0;
+  }
+  .product-btn-list {
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .product-list {
+    gap: 48px 24px;
+  }
+  .product-images {
+    width: 360px;
+  }
+  .product-item {
+    width: calc((100% - 48px) / 3);
   }
 }
