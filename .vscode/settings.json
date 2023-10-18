@@ -1,8 +1,5 @@
 {
-    "liveServer.settings.port": 5501,
-    "cSpell.words": [
-        "advantagers",
-        "Camila",
-        "Ecommerce"
-    ]
+  "liveServer.settings.port": 5501,
+  "cSpell.words": ["advantagers", "Camila", "Ecommerce"],
+  "editor.acceptSuggestionOnEnter": "on"
 }

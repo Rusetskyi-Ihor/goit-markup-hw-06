@@ -388,7 +388,7 @@
       ),
       url(../images/hero-bcg/desktop-hero-bcg@1x.jpg);
   }
-  @media screen and ((-webkit-min-device-pixel-ratio: 2) or (min-resolution: 192dpi)) {
+  @media screen and (-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero {
       width: 100%;
       max-width: 1440px;
